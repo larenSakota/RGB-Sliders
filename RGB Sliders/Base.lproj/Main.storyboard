@@ -58,9 +58,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="redValueChange" destination="BYZ-38-t0r" eventType="editingDidBegin" id="03R-fP-pBa"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Green" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wTF-eN-oxn">
                                 <rect key="frame" x="30" y="509" width="104" height="30"/>
@@ -68,10 +65,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="redValueChange" destination="BYZ-38-t0r" eventType="valueChanged" id="KMP-7Z-ExN"/>
-                                    <action selector="redValueChange" destination="BYZ-38-t0r" eventType="editingDidBegin" id="kAf-kh-PXN"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Blue" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYT-P4-UMT">
                                 <rect key="frame" x="30" y="565" width="104" height="30"/>
@@ -79,10 +72,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="redValueChange" destination="BYZ-38-t0r" eventType="editingDidBegin" id="lAK-0Q-F3h"/>
-                                    <action selector="redValueChange" destination="BYZ-38-t0r" eventType="valueChanged" id="u0z-ir-LRI"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="#ffffff" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edE-Lt-eMj">
                                 <rect key="frame" x="116" y="617" width="142" height="30"/>
@@ -125,6 +114,7 @@
                         <outlet property="blueValue" destination="XYT-P4-UMT" id="rWx-2V-8iS"/>
                         <outlet property="greenSlider" destination="8KE-RN-C2N" id="wEM-VX-Kjx"/>
                         <outlet property="greenValue" destination="wTF-eN-oxn" id="Fq8-7V-Q5X"/>
+                        <outlet property="hexValue" destination="edE-Lt-eMj" id="G3Y-F6-DTE"/>
                         <outlet property="redSlider" destination="f1C-g5-m3K" id="pMG-fd-u9Z"/>
                         <outlet property="redValue" destination="vNN-CI-i9J" id="3QB-hD-Nop"/>
                         <outlet property="viewColor" destination="BT5-Pd-ry5" id="V4O-vo-LyD"/>

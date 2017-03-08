@@ -17,18 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var redValue: UITextField!
     @IBOutlet weak var greenValue: UITextField!
     @IBOutlet weak var blueValue: UITextField!
+    @IBOutlet weak var hexValue: UITextField!
     
-    @IBAction func redValueChange() {
-        let red = redValue.text
-        let green = greenValue.text
-        let blue = blueValue.text
-        
-        redSlider.value = Float(red!)!
-        greenSlider.value = Float(green!)!
-        blueSlider.value = Float(blue!)!
-        
-        updateBackgroundColor()
-    }
 
     @IBAction func updateBackgroundColor() {
         let red = CGFloat(redSlider.value)
@@ -41,12 +31,16 @@ class ViewController: UIViewController {
         greenValue.text = "\(Int(green))"
         blueValue.text = "\(Int(blue))"
         
+        redSlider.value = Float(redValue.text!)!
+        greenSlider.value = Float(greenValue.text!)!
+        blueSlider.value = Float(blueValue.text!)!
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateBackgroundColor()
-        redValueChange()
     }
 
     override func didReceiveMemoryWarning() {

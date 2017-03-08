@@ -14,6 +14,7 @@
 		747599E91E6F492600613CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747599E71E6F492600613CB8 /* LaunchScreen.storyboard */; };
 		747599F41E6F492700613CB8 /* RGB_SlidersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747599F31E6F492700613CB8 /* RGB_SlidersTests.swift */; };
 		747599FF1E6F492700613CB8 /* RGB_SlidersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747599FE1E6F492700613CB8 /* RGB_SlidersUITests.swift */; };
+		7482D8801E704CB20056AEFF /* HexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482D87F1E704CB20056AEFF /* HexExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		747599FA1E6F492700613CB8 /* RGB SlidersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RGB SlidersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747599FE1E6F492700613CB8 /* RGB_SlidersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB_SlidersUITests.swift; sourceTree = "<group>"; };
 		74759A001E6F492700613CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7482D87F1E704CB20056AEFF /* HexExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				747599DE1E6F492600613CB8 /* AppDelegate.swift */,
 				747599E01E6F492600613CB8 /* ViewController.swift */,
 				747599E21E6F492600613CB8 /* Main.storyboard */,
+				7482D87F1E704CB20056AEFF /* HexExtension.swift */,
 				747599E51E6F492600613CB8 /* Assets.xcassets */,
 				747599E71E6F492600613CB8 /* LaunchScreen.storyboard */,
 				747599EA1E6F492600613CB8 /* Info.plist */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				747599E11E6F492600613CB8 /* ViewController.swift in Sources */,
+				7482D8801E704CB20056AEFF /* HexExtension.swift in Sources */,
 				747599DF1E6F492600613CB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				74759A051E6F492700613CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74759A061E6F492700613CB8 /* Build configuration list for PBXNativeTarget "RGB SlidersTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				74759A081E6F492700613CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74759A091E6F492700613CB8 /* Build configuration list for PBXNativeTarget "RGB SlidersUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				74759A0B1E6F492700613CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
