@@ -31,15 +31,18 @@ class ViewController: UIViewController {
         greenValue.text = "\(Int(green))"
         blueValue.text = "\(Int(blue))"
         
-        redSlider.value = Float(redValue.text!)!
-        greenSlider.value = Float(greenValue.text!)!
-        blueSlider.value = Float(blueValue.text!)!
+//        redSlider.value = Float(redValue.text!)!
+//        greenSlider.value = Float(greenValue.text!)!
+//        blueSlider.value = Float(blueValue.text!)!
         
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewColor.layer.borderColor = UIColor.black.cgColor
+        viewColor.layer.borderWidth = 1
         updateBackgroundColor()
     }
 
