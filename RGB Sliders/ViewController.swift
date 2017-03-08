@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueValue: UITextField!
     @IBOutlet weak var hexValue: UITextField!
     
+    @IBAction func changeTextField() {
+            redSlider.value = Float(redValue.text!)!
+            greenSlider.value = Float(greenValue.text!)!
+            blueSlider.value = Float(blueValue.text!)!
+    }
 
     @IBAction func updateBackgroundColor() {
         let red = CGFloat(redSlider.value)
@@ -31,10 +36,6 @@ class ViewController: UIViewController {
         greenValue.text = "\(Int(green))"
         blueValue.text = "\(Int(blue))"
 
-// Update textField value and change slider not working
-//        redSlider.value = Float(redValue.text!)!
-//        greenSlider.value = Float(greenValue.text!)!
-//        blueSlider.value = Float(blueValue.text!)!
         
         let defaults = UserDefaults.standard
         defaults.set(redSlider.value, forKey: "red")
@@ -55,6 +56,7 @@ class ViewController: UIViewController {
         viewColor.layer.borderColor = UIColor.black.cgColor
         viewColor.layer.borderWidth = 1
         updateBackgroundColor()
+        changeTextField()
         
     }
 
