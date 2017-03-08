@@ -109,7 +109,7 @@
                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Vhh-2I-4Gd" kind="show" id="yNy-ze-zLb"/>
+                                    <segue destination="Vhh-2I-4Gd" kind="show" identifier="openColor" id="yNy-ze-zLb"/>
                                 </connections>
                             </button>
                         </subviews>

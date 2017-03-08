@@ -30,25 +30,44 @@ class ViewController: UIViewController {
         redValue.text = "\(Int(red))"
         greenValue.text = "\(Int(green))"
         blueValue.text = "\(Int(blue))"
-        
+
+// Update textField value and change slider not working
 //        redSlider.value = Float(redValue.text!)!
 //        greenSlider.value = Float(greenValue.text!)!
 //        blueSlider.value = Float(blueValue.text!)!
         
+        let defaults = UserDefaults.standard
+        defaults.set(redSlider.value, forKey: "red")
+        defaults.set(greenSlider.value, forKey: "green")
+        defaults.set(blueSlider.value, forKey: "blue")
+        defaults.synchronize()
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let defaults = UserDefaults.standard
+        redSlider.value = defaults.float(forKey: "red")
+        greenSlider.value = defaults.float(forKey: "green")
+        blueSlider.value = defaults.float(forKey: "blue")
+        
         viewColor.layer.borderColor = UIColor.black.cgColor
         viewColor.layer.borderWidth = 1
         updateBackgroundColor()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "openColor") {
+            let newViewController = segue.destination
+            newViewController.view.backgroundColor = viewColor.backgroundColor
+        }
     }
 
 
