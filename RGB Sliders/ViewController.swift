@@ -37,6 +37,8 @@ class ViewController: UIViewController {
         redValue.text = "\(Int(red))"
         greenValue.text = "\(Int(green))"
         blueValue.text = "\(Int(blue))"
+        
+        hexValue.text = "#" + String(format:"%02X", Int(red)) + String(format:"%02X", Int(green)) + String(format:"%02X", Int(blue))
 
         
         let defaults = UserDefaults.standard
