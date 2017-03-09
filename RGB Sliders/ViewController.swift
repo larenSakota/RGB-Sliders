@@ -20,9 +20,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var hexValue: UITextField!
     
     @IBAction func changeTextField() {
-            redSlider.value = Float(redValue.text!)!
-            greenSlider.value = Float(greenValue.text!)!
-            blueSlider.value = Float(blueValue.text!)!
+        
+        redSlider.value = Float(redValue.text!)!
+        greenSlider.value = Float(greenValue.text!)!
+        blueSlider.value = Float(blueValue.text!)!
+        updateBackgroundColor()
     }
 
     @IBAction func updateBackgroundColor() {
